@@ -116,6 +116,10 @@ xml 파일에 등록한 listener를 구현하여 cache event를 처리할 수 �
     }
 ```
 
+## 주의사항
+
+같은 서비스(클래스) 내에서는 cache 선언한 메소드를 호출해도 cache를 사용하지 않는다. 따라서 별도의 클래스로 만들어야한다
+
 ## 참고
 
 <https://medium.com/finda-tech/spring-%EB%A1%9C%EC%BB%AC-%EC%BA%90%EC%8B%9C-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-ehcache-4b5cba8697e0>
